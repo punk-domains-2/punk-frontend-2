@@ -13,9 +13,3 @@ app.use(WagmiPlugin, { config })
 app.use(VueQueryPlugin, { queryClient })
 app.use(router)
 app.mount('#app')
-
-import('@farcaster/frame-sdk')
-  .then(({ sdk }) => {
-    sdk.actions.ready()
-  })
-  .catch(() => {})
